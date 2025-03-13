@@ -1,0 +1,225 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-link:hover {
+  color: #ff6200 !important;
+}
+
+.custom-btn {
+  border: 1px solid #ff6200;
+  color: #ff6200;
+  padding: 6px 20px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ff6200;
+  color: #fff;
+}
+
+.custom-btn-orange {
+  background-color: #ff6200;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.custom-btn-orange:hover {
+  background-color: #e65c00;
+  color: #fff;
+}
+
+.hero-section {
+  background-color: #fff;
+}
+
+.features-section {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #ff6200;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #eee;
+}
+
+.footer-link {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #ff6200;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .custom-btn {
+    margin: 10px auto;
+    display: block;
+    width: 50%;
+  }
+  
+  .hero-section {
+    text-align: center;
+  }
+  
+  .hero-section img {
+    margin: 20px auto;
+  }
+}
+
+/* App.css */
+.solutions-section {
+  background-color: #f8f9fa;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.solution-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #ff6200;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 24px;
+}
+
+.card-title {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .solution-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+/* App.css (adding to existing styles) */
+
+/* Existing styles remain unchanged, adding new ones below */
+
+.about-us-section {
+  background-color: #f8f9fa;
+}
+
+.about-us-section h3 {
+  font-size: 1.5rem;
+}
+
+.about-us-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.stat-box {
+  padding: 20px;
+}
+
+.stat-box h4 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-us-section h2 {
+    font-size: 2rem;
+  }
+  
+  .about-us-section h3 {
+    font-size: 1.25rem;
+  }
+  
+  .about-us-section p {
+    font-size: 0.9rem;
+  }
+  
+  .stat-box h4 {
+    font-size: 1.5rem;
+  }
+  
+  .stat-box p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us-section .col-md-6 {
+    text-align: center;
+  }
+  
+  .about-us-section img {
+    margin-bottom: 20px;
+  }
+}
