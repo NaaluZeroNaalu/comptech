@@ -1,5 +1,6 @@
 import heroimage from "./heroimage.png"
 import webdevelopement from "./webdevelopement.gif"
+import security from "./security.gif"
 
 
 function Home(){
@@ -98,7 +99,7 @@ function Home(){
               },
               {
                 title: 'Cyber Security',
-                icon: 'fas fa-shield-alt',
+                icon: security,
                 desc: 'Protect your digital assets with advanced security measures, including threat detection, data encryption, and regular audits.'
               },
               {
@@ -114,7 +115,7 @@ function Home(){
                       {/* <i className={solution.icon}></i> */}
                     <img src={webdevelopement} height={200} width={300} alt="" />
                     </div>
-                    <h5 className="card-title">{solution.title}</h5>
+                    <a href="#" className="card-title btn ">{solution.title}</a>
                     <p className="card-text" style={{ color: '#666' }}>
                       {solution.desc}
                     </p>

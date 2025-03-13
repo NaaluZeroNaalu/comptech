@@ -16,16 +16,16 @@ function Footer(){
             <div className="col-md-4">
               <h5 style={{ color: '#ff6200' }}>Links</h5>
               <ul className="list-unstyled">
-                <li><a href="#" className="footer-link">Home</a></li>
-                <li><a href="#" className="footer-link">About</a></li>
-                <li><a href="#" className="footer-link">Contact</a></li>
+                <li><a href="/" className="footer-link">Home</a></li>
+                <li><a href="/About-us" className="footer-link">About</a></li>
+                <li><a href="/Connect-with-us" className="footer-link">Contact</a></li>
               </ul>
             </div>
             <div className="col-md-4">
               <h5 style={{ color: '#ff6200' }}>Contact</h5>
               <p style={{ color: '#666' }}>
-                Email: info@company.com<br />
-                Phone: (123) 456-7890
+                Email: comptechheal@gmail.com<br />
+                {/* Phone: (123) 456-7890 */}
               </p>
             </div>
           </div>
