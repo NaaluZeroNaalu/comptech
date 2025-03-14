@@ -2,6 +2,7 @@ import webdevelopement from "./webdevelopement.gif"
 import security from "./security.gif"
 import webhosting from "./webhosting.gif"
 import seo from "./seo.gif"
+import contact from "./contact.png"
 import hero from "./hero.jpg"
 
 
@@ -181,7 +182,7 @@ function Service(){
                      
                       <div className="map-placeholder mt-4">
                         <img
-                          src=""
+                          src={contact}
                           alt="Map"
                           className="img-fluid rounded"
                         />

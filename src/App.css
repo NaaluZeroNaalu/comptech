@@ -38,7 +38,10 @@ body {
 .custom-btn-orange:hover {
   background-color: #e65c00;
   color: #fff;
+  
 }
+
+
 
 @media (max-width: 991px) { /* Bootstrap's lg breakpoint */
   .navbar-collapse {
