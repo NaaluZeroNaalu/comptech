@@ -1,6 +1,9 @@
 import heroimage from "./heroimage.png"
 import webdevelopement from "./webdevelopement.gif"
 import security from "./security.gif"
+import webhosting from "./webhosting.gif"
+import seo from "./seo.gif"
+import more from "./more.gif"
 
 
 function Home(){
@@ -8,28 +11,29 @@ function Home(){
     return(
         <>
         <br /><br />
-    <section className="hero-section py-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-md-6 text-start py-4">
-              <h1 className="display-4 fw-bold">
-                Welcome to <span style={{ color: '#ff6200' }}>ComptechHeal</span>
-              </h1>
-              <p className="lead" style={{ color: '#666' }}>
-                We provide innovative solutions for your business needs with cutting-edge technology.
-              </p>
-              <button className="btn btn-primary">Learn More</button>
-            </div>
-            <div className="col-md-6">
-              <img 
-                src={heroimage} 
-                alt="Hero" 
-                className="img-fluid rounded"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+        <section className="hero-section py-5">
+  <div className="container">
+    <div className="row align-items-center justify-content-center">
+      <div className="col-md-6 text-start py-4">
+        <h3 className="display-4 fw-bold">
+          Welcome to <span style={{ color: '#ff6200' }}>ComptechHeal <br />Technologies</span>
+        </h3>
+        <p className="lead" style={{ color: '#666' }}>
+          We provide innovative solutions for your business needs with cutting-edge technology.
+        </p>
+     
+      </div>
+      <div className="col-md-6 text-center">
+        <img 
+          src={heroimage} 
+          alt="Hero" 
+          className="img-fluid rounded"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <section className="why-choose-us-section py-5">
         <div className="container">
@@ -84,27 +88,37 @@ function Home(){
             {[
               {
                 title: 'Web Development',
-                icon: 'fas fa-code',
+                icon: webdevelopement,
+                h:200,
+                w:300,
                 desc: 'Custom-built, responsive websites tailored to your business needs, ensuring a seamless user experience across all devices.'
               },
               {
                 title: 'Web Hosting',
-                icon: 'fas fa-server',
+                icon: webhosting,
+                h:200,
+                w:200,
                 desc: 'Reliable, high-speed hosting solutions with 99.9% uptime, secure servers, and 24/7 support to keep your site running smoothly.'
               },
               {
                 title: 'SEO',
-                icon: 'fas fa-search',
+                icon: seo,
+                h:200,
+                w:200,
                 desc: 'Boost your online visibility with expert search engine optimization, driving organic traffic and improving search rankings.'
               },
               {
                 title: 'Cyber Security',
                 icon: security,
+                h:210,
+                w:400,
                 desc: 'Protect your digital assets with advanced security measures, including threat detection, data encryption, and regular audits.'
               },
               {
                 title: 'Explore More',
-                icon: 'fas fa-rocket',
+                icon: more,
+                h:250,
+                w:200,
                 desc: 'Discover additional services like digital marketing, app development, and IT consulting to take your business to the next level.'
               }
             ].map((solution, index) => (
@@ -113,7 +127,7 @@ function Home(){
                   <div className="card-body text-center">
                     <div className="mb-3">
                       {/* <i className={solution.icon}></i> */}
-                    <img src={webdevelopement} height={200} width={300} alt="" />
+                    <img src={solution.icon} height={solution.h} width={solution.w} alt="" />
                     </div>
                     <a href="#" className="card-title btn ">{solution.title}</a>
                     <p className="card-text" style={{ color: '#666' }}>
@@ -131,8 +145,8 @@ function Home(){
         <div className="container">
           <div className="row text-center">
             {[
-              { number: '10+', label: 'Years Experience' },
-              { number: '500+', label: 'Projects Completed' },
+              { number: '4+', label: 'Years Experience' },
+              { number: '50+', label: 'Projects Completed' },
               { number: '98%', label: 'Client Satisfaction' }
             ].map((stat, index) => (
               <div className="col-md-4 mb-4" key={index}>

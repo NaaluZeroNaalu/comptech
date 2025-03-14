@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import logo from "./logo.png"
 
 function Header(){
 
@@ -11,47 +12,50 @@ function Header(){
     return(
 
         <>
-        <nav className="navbar fixed-top  navbar-expand-lg navbar-dark bg-light">
-      <div className="container-fluid d-flex justify-content-between">
+       
+       <nav className="navbar fixed-top navbar-expand-lg bg-light">
+      <div className="container-fluid">
         {/* Logo */}
-        <a className="navbar-brand text-dark" href="/">Comptech</a>
+        <a className="navbar-brand" href="/">
+          <img src={logo} alt="ComptechHeal Logo" height="50" className="d-inline-block align-text-top" />
+        </a>
 
         {/* Toggler button for mobile */}
-        <button 
-          className="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav" 
-          aria-controls="navbarNav" 
-          aria-expanded={isNavOpen ? "true" : "false"} 
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded={isNavOpen ? 'true' : 'false'}
           aria-label="Toggle navigation"
           onClick={toggleNav}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar links */}
-        <div className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`} id="navbarNav">
-          <ul className="navbar-nav mx-auto"> {/* Center the links */}
-            <li className="nav-item mx-3">
-              <a className="nav-link active text-dark" aria-current="page" href="/">Home</a>
+        {/* Navbar content */}
+        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav mx-auto">
+            <li className="nav-item">
+              <a className="nav-link text-dark " href="/">Home</a>
             </li>
-            <li className="nav-item mx-3">
+            <li className="nav-item">
               <a className="nav-link text-dark" href="/About-us">About</a>
             </li>
-            <li className="nav-item mx-3">
-              <a className="nav-link text-dark" href="/services">Services</a>
+            <li className="nav-item">
+              <a className="nav-link text-dark" href="/Services-we-provide">Services</a>
             </li>
-            <li className="nav-item mx-3">
+            <li className="nav-item">
               <a className="nav-link text-dark" href="/Connect-with-us">Contact</a>
             </li>
           </ul>
+          {/* Login button */}
+         
         </div>
-
-        {/* Login button */}
-        <button className="btn btn-outline-dark ms-auto" type="button" onClick={() => alert('Login clicked')}>Login</button>
       </div>
     </nav>
+    <br /><br />
         </>
     )
 }

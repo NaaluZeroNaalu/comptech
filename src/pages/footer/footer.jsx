@@ -18,6 +18,7 @@ function Footer(){
               <ul className="list-unstyled">
                 <li><a href="/" className="footer-link">Home</a></li>
                 <li><a href="/About-us" className="footer-link">About</a></li>
+                <li><a href="/Services-we-provide" className="footer-link">Services</a></li>
                 <li><a href="/Connect-with-us" className="footer-link">Contact</a></li>
               </ul>
             </div>
