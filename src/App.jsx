@@ -7,6 +7,7 @@ import Home from './pages/home/home'
 import Aboutus from './pages/aboutus/aboutus'
 import Contact from './pages/contact/contact'
 import Service from './pages/services/service'
+import NotFound from './pages/errors/Notfound'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path='/About-us' element={<Aboutus />} />
           <Route path='/Connect-with-us' element={<Contact />} />
           <Route path='/Services-we-provide' element={<Service />} />
+          <Route path='*' element={<NotFound/>} />
 
 
         </Routes>

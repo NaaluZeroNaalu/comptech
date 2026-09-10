@@ -1,113 +1,225 @@
-import { useState } from 'react'
-import logo from "./logo.png"
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import logo from './logo.png';
 
-function Header(){
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
-    return(
+  const navLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/About-us' },
+    { label: 'Services', href: '/Services-we-provide' },
+    { label: 'Careers', href: '/careers' },
+  ];
 
-        <>
-        <nav className="bg-white/90 backdrop-blur-md fixed w-full top-0 left-0 z-10 shadow-md">
+  return (
+    <nav className="bg-white/95 backdrop-blur-lg fixed w-full top-0 left-0 z-50 border-b border-gray-100 shadow-[0_2px_12px_rgba(0,0,0,0.06)]">
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <a href="/" className="flex items-center">
-              <img src={logo} alt="ComptechHeal Logo" className="h-10 w-auto" />
-              <span className="text-2xl font-bold text-orange-500 ml-2 hidden sm:inline">ComptechHeal</span>
+        
+        <div className="flex items-center justify-between h-[72px]">
+
+          {/* ================= LOGO ================= */}
+          <div className="flex-shrink-0">
+            <a
+              href="/"
+              className="flex items-center gap-2.5 group"
+            >
+              <img
+                src={logo}
+                alt="ComptechHeal Logo"
+                className="h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+
+              {/* <span className="text-[25px] font-bold tracking-tight text-orange-500 transition-colors duration-300 group-hover:text-orange-600 hidden sm:inline">
+                ComptechHeal
+              </span> */}
             </a>
           </div>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
-            <a href="/" className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">
-              Home
-            </a>
-            <a href="/About-us" className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">
-              About
-            </a>
-            <a href="/Services-we-provide" className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">
-              Services
-            </a>
-            {/* <a href="/careers" className="text-gray-700 hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">
-              Careers
-            </a> */}
+
+          {/* ================= DESKTOP NAVIGATION ================= */}
+          <div className="hidden md:flex items-center gap-2">
+
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="
+                  relative
+                  px-4
+                  py-2
+                  text-[15px]
+                  font-medium
+                  text-gray-700
+                  transition-colors
+                  duration-200
+                  hover:text-orange-500
+                  group
+                "
+              >
+                {link.label}
+
+                {/* Hover underline */}
+                <span
+                  className="
+                    absolute
+                    left-4
+                    right-4
+                    bottom-0
+                    h-[2px]
+                    bg-orange-500
+                    scale-x-0
+                    origin-center
+                    transition-transform
+                    duration-300
+                    group-hover:scale-x-100
+                  "
+                />
+              </a>
+            ))}
+
+          </div>
+
+
+          {/* ================= CONTACT BUTTON ================= */}
+          <div className="hidden md:block">
+
             <a
-            style={{textDecoration:"none"}}
               href="/Connect-with-us"
-              className="bg-orange-500 text-white hover:bg-orange-600 px-4 py-2 rounded-md text-sm font-medium transition-colors"
+              className="
+                inline-flex
+                items-center
+                justify-center
+                bg-orange-500
+                hover:bg-orange-600
+                text-white
+                px-6
+                py-2.5
+                rounded-xl
+                text-sm
+                font-semibold
+                shadow-[0_4px_12px_rgba(249,115,22,0.25)]
+                hover:shadow-[0_6px_18px_rgba(249,115,22,0.35)]
+                hover:-translate-y-0.5
+                transition-all
+                duration-200
+              "
             >
               Contact Us
             </a>
+
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <div className="md:hidden">
-            <button
-              onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-orange-500 hover:text-orange-600 hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-                />
-              </svg>
-            </button>
-          </div>
+
+          {/* ================= MOBILE MENU BUTTON ================= */}
+          <button
+            onClick={toggleMenu}
+            className="
+              md:hidden
+              inline-flex
+              items-center
+              justify-center
+              p-2
+              rounded-lg
+              text-gray-700
+              hover:text-orange-500
+              hover:bg-orange-50
+              focus:outline-none
+              focus:ring-2
+              focus:ring-orange-400
+              transition-all
+              duration-200
+            "
+            aria-label="Toggle menu"
+            aria-expanded={isOpen}
+          >
+            {isOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+
+      {/* ================= MOBILE MENU ================= */}
+      <div
+        className={`
+          md:hidden
+          bg-white
+          border-t
+          border-gray-100
+          shadow-lg
+          transition-all
+          duration-300
+          overflow-hidden
+          ${
+            isOpen
+              ? 'max-h-[500px] opacity-100'
+              : 'max-h-0 opacity-0'
+          }
+        `}
+      >
+
+        <div className="px-4 py-4 space-y-1">
+
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={closeMenu}
+              className="
+                block
+                px-4
+                py-3
+                rounded-lg
+                text-base
+                font-medium
+                text-gray-700
+                hover:text-orange-500
+                hover:bg-orange-50
+                transition-colors
+                duration-200
+              "
+            >
+              {link.label}
+            </a>
+          ))}
+
+
+          {/* Mobile Contact */}
           <a
-            href="/"
-            className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-          >
-            Home
-          </a>
-          <a
-            href="/About-us"
-            className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-          >
-            About
-          </a>
-          <a
-            href="/Services-we-provide"
-            className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-          >
-            Services
-          </a>
-          <a
-            href="/careers"
-            className="text-gray-700 hover:text-orange-500 hover:bg-orange-50 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-          >
-            Careers
-          </a>
-          <a
-          style={{textDecoration:"none"}}
             href="/Connect-with-us"
-            className="text-white bg-orange-500 hover:bg-orange-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+            onClick={closeMenu}
+            className="
+              block
+              mt-3
+              px-4
+              py-3
+              rounded-xl
+              bg-orange-500
+              hover:bg-orange-600
+              text-white
+              text-base
+              font-semibold
+              text-center
+              shadow-md
+              transition-all
+              duration-200
+            "
           >
             Contact Us
           </a>
+
         </div>
       </div>
-    </nav>
-        </>
-    )
-}
 
-export default Header;
+    </nav>
+  );
+}

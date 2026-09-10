@@ -1,0 +1,152 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "title": "Web Development",
+      "icon": "webdevelopement",
+      "shortDesc": "Custom-built, responsive websites tailored to your business needs, ensuring a seamless user experience across all devices.",
+      "whatWeDo": "We create modern, scalable, and user-friendly websites that are designed to convert visitors into customers. Our expert team builds websites using the latest technologies and best practices, ensuring your online presence stands out from the competition.",
+      "whatWeOffer": [
+        {
+          "feature": "Responsive Design",
+          "description": "Websites that look perfect and function flawlessly on all devices - desktop, tablet, and mobile."
+        },
+        {
+          "feature": "Custom Development",
+          "description": "Tailored solutions built from scratch to match your unique business requirements and brand identity."
+        },
+        {
+          "feature": "E-Commerce Solutions",
+          "description": "Fully functional online stores with secure payment gateways, inventory management, and order tracking."
+        },
+        {
+          "feature": "CMS Integration",
+          "description": "Easy-to-use content management systems (WordPress, Drupal, custom CMS) for simple website updates."
+        },
+        {
+          "feature": "API Development",
+          "description": "Robust APIs for seamless integration with third-party services and applications."
+        },
+        {
+          "feature": "Performance Optimization",
+          "description": "Fast-loading websites with optimized code, images, and caching for better user experience and SEO."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Web Hosting",
+      "icon": "webhosting",
+      "shortDesc": "Reliable, high-speed hosting solutions with 99.9% uptime, secure servers, and 24/7 support to keep your site running smoothly.",
+      "whatWeDo": "We provide enterprise-grade hosting infrastructure that ensures your website is always online, fast, and secure. Our hosting solutions are designed to handle traffic spikes, protect against cyber threats, and deliver lightning-fast load times.",
+      "whatWeOffer": [
+        {
+          "feature": "99.9% Uptime Guarantee",
+          "description": "SLA-backed guarantee ensuring your website is always accessible to your customers."
+        },
+        {
+          "feature": "SSL Certificates",
+          "description": "Free SSL certificates for encrypted connections and secure data transmission protecting customer information."
+        },
+        {
+          "feature": "Automatic Backups",
+          "description": "Daily automated backups with easy restoration options to protect against data loss."
+        },
+        {
+          "feature": "DDoS Protection",
+          "description": "Advanced protection against distributed denial-of-service attacks to keep your website secure."
+        },
+        {
+          "feature": "Scalable Resources",
+          "description": "Flexible hosting plans that grow with your business - easily upgrade as your traffic increases."
+        },
+        {
+          "feature": "24/7 Technical Support",
+          "description": "Expert support team available round-the-clock to resolve issues and optimize your hosting."
+        },
+        {
+          "feature": "Email Hosting",
+          "description": "Professional email accounts with advanced spam filtering and reliable delivery."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "SEO",
+      "icon": "seo",
+      "shortDesc": "Boost your online visibility with expert search engine optimization, driving organic traffic and improving search rankings.",
+      "whatWeDo": "Our SEO experts optimize your website to rank higher in search engine results, driving targeted organic traffic to your business. We use proven strategies and latest SEO techniques to ensure sustainable growth in visibility and conversions.",
+      "whatWeOffer": [
+        {
+          "feature": "Keyword Research & Strategy",
+          "description": "In-depth analysis to identify high-value keywords that your target audience is searching for."
+        },
+        {
+          "feature": "On-Page Optimization",
+          "description": "Optimization of meta tags, headings, content, and structure for better search engine visibility."
+        },
+        {
+          "feature": "Technical SEO",
+          "description": "Fixing crawlability issues, improving site speed, mobile optimization, and structured data markup."
+        },
+        {
+          "feature": "Link Building",
+          "description": "Strategic backlink acquisition from authoritative websites to boost your domain authority."
+        },
+        {
+          "feature": "Content Strategy",
+          "description": "Creation of high-quality, SEO-optimized content that engages users and ranks well in search results."
+        },
+        {
+          "feature": "Local SEO",
+          "description": "Google My Business optimization and local citation building for better local search visibility."
+        },
+        {
+          "feature": "SEO Analytics & Reporting",
+          "description": "Regular detailed reports tracking rankings, traffic, conversions, and ROI from your SEO efforts."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Cyber Security",
+      "icon": "security",
+      "shortDesc": "Protect your digital assets with advanced security measures, including threat detection, data encryption, and regular audits.",
+      "whatWeDo": "We provide comprehensive cybersecurity solutions to protect your business from evolving digital threats. Our team implements multi-layered security strategies, monitors for threats 24/7, and ensures your sensitive data remains protected.",
+      "whatWeOffer": [
+        {
+          "feature": "Threat Detection & Response",
+          "description": "Real-time monitoring and immediate response to detect and mitigate security threats before they cause damage."
+        },
+        {
+          "feature": "Data Encryption",
+          "description": "Enterprise-grade encryption for data in transit and at rest to protect sensitive information."
+        },
+        {
+          "feature": "Firewall Management",
+          "description": "Advanced firewalls and network security configurations to control and monitor traffic."
+        },
+        {
+          "feature": "Security Audits",
+          "description": "Comprehensive vulnerability assessments and penetration testing to identify and fix security weaknesses."
+        },
+        {
+          "feature": "Employee Training",
+          "description": "Security awareness programs to educate your team about phishing, malware, and best practices."
+        },
+        {
+          "feature": "Compliance Management",
+          "description": "Assistance with GDPR, CCPA, PCI-DSS, and other regulatory compliance requirements."
+        },
+        {
+          "feature": "Incident Response",
+          "description": "24/7 incident response team ready to handle security breaches and minimize impact."
+        },
+        {
+          "feature": "Backup & Disaster Recovery",
+          "description": "Secure backup solutions and disaster recovery plans to ensure business continuity."
+        }
+      ]
+    }
+  ]
+}
