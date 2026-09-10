@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronRight } from 'lucide-react'; // Removed unused ArrowRight
-import servicesData from './servicesData.json';
+import servicesData from './Servicesaata.json';
 import webdevelopement from "./webdevelopement.gif";
 import security from "./security.gif";
 import webhosting from "./webhosting.gif";
