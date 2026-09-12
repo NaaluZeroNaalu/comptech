@@ -11,8 +11,12 @@ export default function Header() {
   const navLinks = [
     { label: 'Home', href: '/' },
     { label: 'About', href: '/About-us' },
-    { label: 'Services', href: '/Services-we-provide' },
     { label: 'Careers', href: '/careers' },
+    { label: 'Services', href: '/Services-we-provide' },
+    { label: 'Solutions', href: '/' },
+    { label: 'Portfiolio', href: '/' },
+    { label: 'AMC', href: '/' },
+    // { label: 'Blog', href: '/' },
   ];
 
   return (
@@ -109,7 +113,7 @@ export default function Header() {
                 duration-200
               "
             >
-              Contact Us
+              Get a Quote
             </a>
 
           </div>
@@ -214,7 +218,7 @@ export default function Header() {
               duration-200
             "
           >
-            Contact Us
+            Get a Quote
           </a>
 
         </div>

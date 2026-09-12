@@ -33,8 +33,8 @@ function ServicesSection() {
             marginBottom: '15px',
             color: '#333',
           }}>
-            Discover our{' '}
-            <span style={{ color: '#ff6200' }}>Solutions</span>
+            What We{' '}
+            <span style={{ color: '#ff6200' }}>Do</span>
           </h2>
           <p style={{
             color: '#666',
@@ -43,7 +43,7 @@ function ServicesSection() {
             margin: '0 auto',
             lineHeight: '1.6',
           }}>
-            Explore our comprehensive suite of technology solutions
+            Technology Solutions. One Trusted Partner.
           </p>
         </div>
  
